@@ -1,0 +1,430 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+  font-family: 'Istok Web', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* ---- button ---- */
+
+button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: rgba(48,51,54,0.95);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffbd00;
+  color: #222;
+}
+
+#filters {
+  display: none;
+}
+
+#filters select {
+    display: inline-block;
+      border: 0 !important;.  /*Removes border*/
+     -webkit-appearance: none;  /*Removes default chrome and safari style*/
+     -moz-appearance: none;  /*Removes default style Firefox*/
+   width: 300px;
+   font-size: 26px;
+   height: 40px;
+   margin: auto;
+   
+}
+
+
+.selection-group {
+margin: auto;
+display: inline-block;
+width: 25%;
+padding-top: 150px;
+}
+
+
+
+
+
+
+/* ---- isotope ---- */
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ---- .element-item ---- */
+
+
+
+#intro {
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+#ideas {
+  padding-top: 150px;
+  margin: auto;
+  text-align: center;
+  display: none;
+  padding-bottom: 20px;
+}
+
+#match {
+  padding-top: 150px;
+  margin: auto;
+  text-align: center;
+  display: none;
+  font-size: 26px;
+}
+
+#match select {
+text-align: center;
+background: #ebe5ff;
+font-weight: bold;
+padding: 8px;
+color: black;
+cursor: auto;
+margin: 5px;
+border: 1px solid #111;
+width: 200px;
+font-size: 16px;
+height: 40px;
+}
+
+#offer {
+  display: none;
+}
+
+form {
+  width: 700px;
+  margin: auto;
+  line-height: 170%;
+  font-size: 24px;
+  display: block;
+}
+
+#ideas input {
+text-align: center;
+background: #A7CDF2;
+outline: 0;
+box-shadow: none;
+display: inline-block;
+font-weight: bold;
+padding: 8px;
+color: black;
+border: none;
+cursor: auto;
+}
+
+textarea, input[type="text"] {
+  line-height: 20px;
+  height: 25px;
+  font-size: 14px;
+  width: 200px;
+}
+
+#this_idea {
+  padding-top: 150px;
+  display: none;
+  text-align: center;
+  margin: auto;
+}
+
+#show-idea #more-idea {
+  text-align: center;
+  margin: auto;
+    width: 700px;
+  line-height: 170%;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+.item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.item {    
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    width: 255px;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
+}
+
+
+.item button {
+  width: 80px;
+  height: 40px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#get_involved {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+
+#get_involved button {
+  vertical-align: top;
+  width: 120px;
+  height: 90px;
+  margin: 5px;
+}
+
+
+
+
+.looks {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.this_div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    position: relative;
+}
+
+
+/*
+.visual_div {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: transparent;
+    z-index: 2;
+}*/
+
+.other_div{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    position: absolute;
+    color: white;
+    background: rgba(48,51,54,0.95);
+    padding: 5px;
+    font-size: 14px;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+     display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.ask {
+    position: relative;
+    opacity: 0;
+    transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+}
+
+
+.visual {
+    top: 25%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:auto; 
+    width:100%;
+    text-align: center;
+    padding: 2px;
+    opacity: 1;
+    transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+}
+
+
+#tata {
+  padding-top: 10px;
+}
+
+
+
+.menu {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 136px;
+    position: fixed;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.1);
+    color: white;
+    background: rgba(48,51,54,0.95);
+    z-index: 2147483647;
+}
+
+#wrapper {
+  position: relative;
+}
+
+#heady-topper {
+margin: auto;
+text-align: center;
+left: 30%;
+width: 100%;
+}
+
+#heady-topper h1{
+  margin: auto;
+}
+
+#heady-topper h2{
+  font-size: 20px;
+  margin: auto;
+}
+
+#head {
+  display: none;
+}
+
+#buttons {
+  position: absolute;
+  height: 5px;
+  font-size: 12px;
+  width: 100px;
+  top: 0;
+  right: 0;
+}
+
+
+.tags select {
+ width: 100%;
+
+}
+
+
+#eldiv {
+  font-size: 20px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.pop {
+  display: none;
+  color: black;
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	top: 25%;
+	left: 25%;
+	padding: 16px;
+	border: 16px solid orange;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+
+.tags {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.tags input {
+  width: 90%;
+}
+
+.button_div {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+
+.button_div button {
+  width: 8px;
+  height: 20px;
+  font-size: 12px;
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.tagButton {
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#personal {
+  display: none;
+  padding: 10px;
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	margin: 20px;
+	padding: 5px;
+}
+
+#buttons button {
+  background: #264c73;
+}
+
+#buttons button:hover {
+  background-color: #ffbd00;
+  color: #222;
+}
+
